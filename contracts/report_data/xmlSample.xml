@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ifti-draList xmlns="http://austrac.gov.au/schema/reporting/IFTI-DRA-1-2">
+    <reNumber>19990</reNumber>
+    <fileName>IFTI-DRA2010121801.xml</fileName>
+    <reportCount>2</reportCount>
+    <!-- First IFTI-DRA -->
+    <ifti-dra id="ID_1R">
+        <header id="ID_1R01">
+            <txnRefNo>FTI200904301159</txnRefNo>
+        </header>
+        <transaction id="ID_1R02">
+            <txnDate>2009-04-30</txnDate>
+            <currencyAmount id="ID_1R03">
+                <currency>AUD</currency>
+                <amount>6250.00</amount>
+            </currencyAmount>
+            <direction>I</direction>
+            <tfrType id="ID_1R04">
+                <money>yes</money>
+            </tfrType>
+            <valueDate>2009-05-01</valueDate>
+        </transaction>
+        <transferor id="ID_1R05">
+            <fullName>John Citizen</fullName>
+            <mainAddress id="ID_1R06">
+                <addr>99 Hunter Street</addr>
+                <suburb>Port Moresby</suburb>
+                <country>Papua New Guinea</country>
+            </mainAddress>
+            <phone>+675 123 4567</phone>
+            <email>somepayee@payee.com</email>
+        </transferor>
+        <orderingInstn id="ID_1R07">
+            <branch id="ID_1R08">
+                <fullName>Kina Xpress.Org</fullName>
+                <mainAddress id="ID_1R09">
+                    <addr>Cnr Musgrave Street &amp; Champion Parade</addr>
+                    <suburb>Port Moresby</suburb>
+                    <country>Papua New Guinea</country>
+                </mainAddress>
+            </branch>
+            <foreignBased>Y</foreignBased>
+            <phone>+675 765 4321</phone>
+            <email>portmoresby@kinaxpress.org.pg</email>
+            <businessStruct>A</businessStruct>
+        </orderingInstn>
+            <initiatingInstn id="ID_1R10">
+            <sameAsOrderingInstn>Y</sameAsOrderingInstn>
+        </initiatingInstn>
+        <sendingInstn id="ID_1R11">
+            <sameAsOrderingInstn>Y</sameAsOrderingInstn>
+        </sendingInstn>
+        <receivingInstn id="ID_1R12">
+            <fullName>OZ Dollar Express Pty Ltd</fullName>
+            <mainAddress id="ID_1R13">
+                <addr>1a/199 Mount Street</addr>
+                <suburb>Coogee</suburb>
+                <state>NSW</state>
+                <postcode>2034</postcode>
+                <country>Australia</country>
+            </mainAddress>
+        </receivingInstn>
+        <beneficiaryInstn id="ID_1R14">
+            <fullName>Rockhampton Transfers Pty Ltd</fullName>
+            <mainAddress id="ID_1R15">
+                <addr>Shop 1, 123 Denison Street</addr>
+                <suburb>Rockhampton</suburb>
+                <state>QLD</state>
+                <postcode>4700</postcode>
+                <country>Australia</country>
+            </mainAddress>
+        </beneficiaryInstn>
+        <transferee id="ID_1R16">
+            <fullName>Some Academic Grammar School</fullName>
+            <mainAddress id="ID_1R17">
+                <addr>Lennox Street</addr>
+                <suburb>Rockhampton</suburb>
+                <state>QLD</state>
+                <postcode>4700</postcode>
+                <country>Australia</country>
+            </mainAddress>
+            <phone>+61 7 4999 9999</phone>
+            <email>bursar@iags.qld.edu.au</email>
+            <account id="ID_1R18">
+                <acctNumber>9876543210</acctNumber>
+                <name>Major Bank Limited</name>
+                <city>Rockhampton</city>
+                <country>Australia</country>
+            </account>
+        </transferee>
+        <additionalDetails id="ID_1R19">
+            <reasonForTransfer>A. Citizen - School Fees Term2</reasonForTransfer>
+        </additionalDetails>
+    </ifti-dra>
+    <!-- Second IFTI-DRA -->
+    <ifti-dra id="ID_2R">
+        <header id="ID_2R01">
+            <txnRefNo>FTO200904301201</txnRefNo>
+            <interceptFlag>Y</interceptFlag>
+        </header>
+        <transaction id="ID_2R02">
+            <txnDate>2009-04-31</txnDate>
+            <currencyAmount id="ID_2R03">
+                <currency>EUR</currency>
+                <amount>10200.00</amount>
+            </currencyAmount>
+            <direction>O</direction>
+            <tfrType id="ID_2R04">
+                <property>
+                    <desc>Car</desc>
+                </property>
+            </tfrType>
+            <valueDate>2009-05-01</valueDate>
+        </transaction>
+        <transferor id="ID_2R05">
+            <fullName>Jane Citizen</fullName>
+            <mainAddress id="ID_2R06">
+                <addr>38 Burgundy Street</addr>
+                <suburb>Heidelberg</suburb>
+                <state>VIC</state>
+                <postcode>3084</postcode>
+                <country>Australia</country>
+            </mainAddress>
+            <indOcc id="ID_2R07">
+                <description>Chiropractor</description>
+            </indOcc>
+            <dob>1976-06-25</dob>
+            <identification id="ID_2R08">
+                <type>BENE</type>
+                <number>9999999991</number>
+                <issuer>Medicare Australia</issuer>
+            </identification>
+        </transferor>
+        <orderingInstn id="ID_2R09">
+            <branch id="ID_2R10">
+                <fullName>OZ Dollar Express Pty Ltd</fullName>
+                <mainAddress id="ID_2R11">
+                    <addr>104D Bell Street</addr>
+                    <suburb>Heidelberg</suburb>
+                    <state>VIC</state>
+                    <postcode>3084</postcode>
+                    <country>Australia</country>
+                </mainAddress>
+            </branch>
+            <foreignBased>N</foreignBased>
+        </orderingInstn>
+        <initiatingInstn id="ID_2R12">
+            <sameAsOrderingInstn>Y</sameAsOrderingInstn>
+        </initiatingInstn>
+        <sendingInstn id="ID_2R13">
+            <fullName>OZ Dollar Express Pty Ltd</fullName>
+            <mainAddress id="ID_2R14">
+                <addr>1a/199 Mount Street</addr>
+                <suburb>Coogee</suburb>
+                <state>NSW</state>
+                <postcode>2034</postcode>
+                <country>Australia</country>
+            </mainAddress>
+            <abn>66999999996</abn>
+        </sendingInstn>
+        <receivingInstn id="ID_2R15">
+            <fullName>EURO Import/Export Limited</fullName>
+            <mainAddress id="ID_2R16">
+                <addr>Schipwerf 9</addr>
+                <suburb>Rotterdam</suburb>
+                <postcode>3089 KG</postcode>
+                <country>Netherlands</country>
+            </mainAddress>
+        </receivingInstn>
+        <beneficiaryInstn id="ID_2R17">
+            <fullName>EURO Import/Export Limited</fullName>
+            <mainAddress id="ID_2R18">
+                <addr>Pier 8, Tolka Quay Road</addr>
+                <suburb>Dublin</suburb>
+                <postcode>1</postcode>
+                <country>Ireland</country>
+            </mainAddress>
+        </beneficiaryInstn>
+        <transferee id="ID_2R19">
+            <fullName>Spine Tingling Supplies Limited</fullName>
+            <mainAddress id="ID_2R20">
+                <addr>Charlemont Place</addr>
+                <suburb>Dublin</suburb>
+                <postcode>2</postcode>
+                <country>Ireland</country>
+            </mainAddress>
+            <account id="ID_2R21">
+                <acctNumber>99-9876-5432-1000</acctNumber>
+                <name>Foreign Major Bank Limited</name>
+                <city>Dublin</city>
+                <country>Ireland</country>
+            </account>
+        </transferee>
+        <additionalDetails id="ID_2R22">
+            <reasonForTransfer>INV 33E-0930</reasonForTransfer>
+        </additionalDetails>
+    </ifti-dra>
+</ifti-draList>

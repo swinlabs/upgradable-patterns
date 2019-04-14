@@ -1,0 +1,84 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Express Server",
+  "main": "index.js",
+  "engines": {
+    "node": "8.x.x",
+    "npm": "6.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vancuongbui/ReactNodeFull-Stack.git"
+  },
+  "scripts": {
+    "deploy": "gcloud app deploy",
+    "start": "node index.js",
+    "client": "npm run start --prefix client",
+    "server": "nodemon index.js",
+    "lint": "repo-tools lint",
+    "pretest": "npm run lint",
+    "system-test": "repo-tools test app",
+    "test": "npm run system-test",
+    "e2e-test": "repo-tools test deploy",
+    "dev": "nodemon index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [
+    "react",
+    "node",
+    "js"
+  ],
+  "author": "Cuong Bui",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/storage": "^2.0.3",
+    "babel-cli": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.3",
+    "concurrently": "^4.0.1",
+    "connect-flash": "^0.1.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "crypto": "^1.0.1",
+    "ethers": "^4.0.27",
+    "event-stream": "3.3.4",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "mocha": "^5.2.0",
+    "mongoose": "^5.2.17",
+    "mongoose-double": "0.0.1",
+    "mongoose-long": "^0.2.1",
+    "nodemon": "^1.18.4",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.6.1",
+    "react-datepicker": "^2.0.0",
+    "react-dom": "^16.6.1",
+    "react-key-index": "^0.1.1",
+    "sendgrid": "^5.2.3",
+    "solc": "^0.4.25",
+    "stripe": "^6.11.0",
+    "typedarray-to-buffer": "^3.1.5",
+    "web3": "^1.0.0-beta.34",
+    "web3-utils": "^1.0.0-beta.51",
+    "websocket": "^1.0.28",
+    "xml2js": "^0.4.19",
+    "yaeti": "^1.0.2"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "^2.3.0",
+    "semistandard": "^12.0.1"
+  },
+  "cloud-repo-tools": {
+    "test": {
+      "app": {
+        "msg": "Hello, world!"
+      }
+    },
+    "requiresKeyFile": true,
+    "requiresProjectId": true
+  }
+}
