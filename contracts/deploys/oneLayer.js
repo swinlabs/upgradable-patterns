@@ -69,4 +69,21 @@ async function deploy_new_contracts(rpc_provider, protocol) {
     
 }
 
+//function to set address of this contract to proxy contract
+async function _setContractAddress(logicAddress) {
+    try {
+        var gasUsed = await instanceUpgradeabilityProxy.methods._upgradeTo(logicAddress).estimateGas();
+        console.log(`gas used to set address is ${gasUsed}`);
+        const transHash = await instanceUpgradeabilityProxy.methods._upgradeTo(logicAddress).send({
+            from: administrator,
+            gas: Math.floor(gasUsed * 1.5)
+        })
+        console.log(`transaction hash received from set address: ${transHash}`);
+         return gasUsed;
+    } catch (error) {
+        console.log(`error with set address of logic contract: ${error}`);
+        return 0;
+    }
+}
+
 module.exports = deploy_new_contracts;
