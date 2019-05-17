@@ -4,7 +4,7 @@ I. The lab designed to test all upgradable smart contracts patterns:
     2. satellite pattern
     3. register pattern
     4. secured data segregation
-    5. proxy pattern
+    5. proxy pattern - [Zeppelinos pattern](https://blog.zeppelinos.org/proxy-patterns/)
     6. relay pattern
 
 II. Running the lab
